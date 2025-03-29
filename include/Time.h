@@ -9,10 +9,10 @@ class Time
 private:
     int hours;
     int minutes;
-
+    void simplify();
 public:
     // Constructor
-    Time(int h = 0, int m = 0) : hours(h), minutes(m) {}
+    Time(int h = 0, int m = 0) : hours(h), minutes(m) {simplify();}
 
     // Getter functions (for testing)
     int getHours() const { return hours; }
